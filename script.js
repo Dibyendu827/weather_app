@@ -12,7 +12,7 @@ searchIcon.addEventListener('click', ()=>{showWeather(getData)});
 
 async function getData(loc){
     const apiKey = "0cf623b0300923528abb5d0b21bfd038";
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${loc}&units=metric&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${loc}&units=metric&appid=${apiKey}`;
     const responce = await fetch(url);
     const data = await responce.json();
     if(!responce.ok){
