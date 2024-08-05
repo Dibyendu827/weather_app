@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./img/cloud.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="box">
+            <h1 class="title">Weather App</h1>
+            <div class="innerBox">
+                <div id="searchBox">
+                    <input type="text" id="search" placeholder="Enter your city">
+                    <img id="searchIcon" src="./img/Vector.svg" alt="">
+                </div>
+                <div class="weatherBox">
+                    <div class="locBox">
+                        <img id="locIcon" src="./img/system-uicons_location.svg" alt="" >
+                        <p class="location"></p>
+                    </div>
+                    <div class="middleItems">
+                        <img src="" alt="" id="skyImage">
+                        <div class="rightSec">
+                            <p class="temp"><span id="tempVal"></span><sup>o</sup>C</p>
+                            <p class="weatherDesc"></p>
+                        </div>
+                    </div>
+                    <div class="lowerItems">
+                        <div class="humidity">
+                            <p class="humidityVal"></p>
+                            <p class="humidityTxt">Humidity</p>
+                        </div>
+                        <div class="windSpeed">
+                            <p class="windSpeedVal"></p>
+                            <p class="windSpeedTxt">Wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="credit">Developed by <a href="https://www.linkedin.com/in/dibyendu-bhakta" target="_blank">Dibyendu</a> with ❤</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
